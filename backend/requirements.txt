@@ -6,6 +6,6 @@ tensorflow-cpu
 opencv-python-headless
 python-multipart
 passlib[bcrypt]
-pyjwt
+python-jose[cryptography]
 pydantic
 pydantic-settings
