@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 MODEL_DIR = Path(__file__).parent.parent.parent.parent / "model"
 MODEL_PATH = MODEL_DIR / "emotion_model.keras"
 TFLITE_PATH = MODEL_DIR / "emotion_model.tflite"
-CASCADE_PATH = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
+CASCADE_PATH = str(MODEL_DIR / "haarcascade_frontalface_default.xml")
 
 EMOTIONS = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
 
