@@ -26,7 +26,7 @@ app = FastAPI(
 
 from app.services.ml_service import ml_engine
 from app.database.session import engine, Base
-import app.models.domain # Import domain models so Base knows about them
+from app.models import domain # Import domain models so Base knows about them
 
 @app.on_event("startup")
 async def startup_event():
