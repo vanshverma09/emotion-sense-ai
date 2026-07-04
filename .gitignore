@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+.DS_Store
+
+# Note: Model weights (.keras, .tflite) are explicitly allowed here unless they exceed GitHub's 100MB limit.

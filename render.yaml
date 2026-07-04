@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: emotion-sense-api
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
